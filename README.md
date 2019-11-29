@@ -1,10 +1,14 @@
 # nuxt-static
-
 > Nuxt generate static site boilerplate
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## Build Setup
 
 ``` bash
+# install prerequisites
+npm install -g commitizen
+
 # install dependencies
 $ npm run install
 

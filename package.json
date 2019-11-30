@@ -1,6 +1,6 @@
 {
   "name": "nuxt-static",
-  "description": "Nuxt generate static site boilerplate",
+  "description": "A full-featured boilerplate for static websites.",
   "author": "Ryan Binns",
   "private": true,
   "scripts": {

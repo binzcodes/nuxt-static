@@ -1,7 +1,11 @@
 {
   "name": "nuxt-static",
   "description": "A full-featured boilerplate for static websites.",
-  "author": "Ryan Binns",
+  "author": {
+    "name": "Ryan Binns",
+    "email": "hi@rbi.nz",
+    "url": "http://rbi.nz/"
+  },
   "private": true,
   "scripts": {
     "dev": "nuxt",

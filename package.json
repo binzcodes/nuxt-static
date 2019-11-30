@@ -1,7 +1,11 @@
 {
   "name": "nuxt-static",
-  "description": "Nuxt generate static site boilerplate",
-  "author": "Ryan Binns",
+  "description": "A full-featured boilerplate for static websites.",
+  "author": {
+    "name": "Ryan Binns",
+    "email": "hi@rbi.nz",
+    "url": "http://rbi.nz/"
+  },
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -16,7 +20,13 @@
   },
   "husky": {
     "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
       "pre-commit": "lint-staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
   },
   "dependencies": {

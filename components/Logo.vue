@@ -1,17 +1,18 @@
 <template>
-  <div class="VueToNuxtLogo">
+  <div class="rbinzLogo">
     <div class="Triangle Triangle--two" />
+    <div class="Triangle Triangle--two--lighten" />
     <div class="Triangle Triangle--one" />
+    <div class="Triangle Triangle--one--lighten" />
     <div class="Triangle Triangle--three" />
+    <div class="Triangle Triangle--three--lighten" />
     <div class="Triangle Triangle--four" />
   </div>
 </template>
 
 <style>
-.VueToNuxtLogo {
+.rbinzLogo {
   display: inline-block;
-  animation: turn 2s linear forwards 1s;
-  transform: rotateX(180deg);
   position: relative;
   overflow: hidden;
   height: 180px;
@@ -29,51 +30,38 @@
 .Triangle--one {
   border-left: 105px solid transparent;
   border-right: 105px solid transparent;
-  border-bottom: 180px solid #41b883;
+  border-top: 180px solid #83e0a4;
+}
+
+.Triangle--one--lighten {
+  border-left: 105px solid transparent;
+  border-top: 180px solid #98eab5;
 }
 
 .Triangle--two {
-  top: 30px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
+  left: 70px;
   border-left: 87.5px solid transparent;
   border-right: 87.5px solid transparent;
-  border-bottom: 150px solid #3b8070;
+  border-top: 150px solid #43a1c5;
+}
+
+.Triangle--two--lighten {
+  left: 70px;
+  border-left: 87.5px solid transparent;
+  border-top: 150px solid #7dc6e1;
 }
 
 .Triangle--three {
-  top: 60px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
+  left: 70px;
   border-left: 70px solid transparent;
   border-right: 70px solid transparent;
-  border-bottom: 120px solid #35495e;
+  border-top: 120px solid #184757;
 }
 
-.Triangle--four {
-  top: 120px;
+.Triangle--three--lighten {
   left: 70px;
-  animation: godown 0.5s linear forwards 3s;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-bottom: 60px solid #fff;
-}
-
-@keyframes turn {
-  100% {
-    transform: rotateX(0deg);
-  }
-}
-
-@keyframes godown {
-  100% {
-    top: 180px;
-  }
-}
-
-@keyframes goright {
-  100% {
-    left: 70px;
-  }
+  animation: gorightTwoHighlight 0.5s linear forwards 3.5s;
+  border-left: 70px solid transparent;
+  border-top: 120px solid #23596b;
 }
 </style>

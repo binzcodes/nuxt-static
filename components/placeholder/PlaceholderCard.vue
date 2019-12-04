@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <div>
-      <logo />
+      <app-logo />
     </div>
     <v-card-title primary-title class="p-8">
       <div class="mx-auto">
@@ -11,7 +11,7 @@
         </p>
       </div>
     </v-card-title>
-    <skills v-bind:skills="skills"></skills>
+    <app-stack v-bind:stack="cardTechnologyStack"></app-stack>
   </v-card>
 </template>
 
@@ -19,31 +19,18 @@
 export default {
   name: 'HelloCard',
   components: {
-    Logo: () => import('~/components/Logo.vue'),
-    Skills: () => import('~/components/Skills.vue')
+    AppLogo: () => import('~/components/ui/AppLogo.vue'),
+    AppStack: () => import('~/components/placeholder/Stack.vue')
   },
   props: {
     cardTitle: { type: String, default: 'Nuxt Static' },
     cardDescription: {
       type: String,
       default: 'A full-featured boilerplate for static websites.'
-    }
-  },
-  data() {
-    return {
-      skills: [
-        {
-          name: 'Node.js',
-          description: '',
-          icon: 'mdi-nodejs',
-          color: 'green'
-        },
-        {
-          name: 'Vue.js',
-          description: '',
-          icon: 'mdi-vuejs',
-          color: 'teal'
-        },
+    },
+    cardTechnologyStack: {
+      type: Array,
+      default: () => [
         {
           name: 'Netlify',
           description: '',
@@ -51,9 +38,21 @@ export default {
           color: 'cyan'
         },
         {
+          name: 'Node.js',
+          description: '',
+          icon: 'mdi-nodejs',
+          color: 'green'
+        },
+        {
           name: 'NuxtJS',
           description: '',
           icon: 'mdi-nuxt',
+          color: 'teal'
+        },
+        {
+          name: 'Vue.js',
+          description: '',
+          icon: 'mdi-vuejs',
           color: 'teal'
         },
         {

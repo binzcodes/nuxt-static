@@ -4,14 +4,14 @@
     <v-content>
       <nuxt />
     </v-content>
-    <layout-footer />
+    <app-footer />
   </v-app>
 </template>
 
 <script>
 export default {
   components: {
-    layoutFooter: () => import('~/components/layout/Footer.vue')
+    AppFooter: () => import('~/components/layout/AppFooter.vue')
   }
 }
 </script>

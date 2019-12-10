@@ -10,9 +10,10 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     Content-Security-Policy = '''
-    default-src https:;
+    default-src https: 'self';
     style-src https: 'self' 'unsafe-inline';
     script-src https: 'self' 'unsafe-inline';
+    img-src https: *;
     object-src 'none'
     '''
     Referrer-Policy = "strict-origin-when-cross-origin"

@@ -1,6 +1,6 @@
 <template>
-  <v-card-actions v-if="stack.length > 0" class="pb-8">
-    <div v-bind:key="stack.index" v-for="technology in stack" class="mx-auto">
+  <v-card-actions v-if="stack.length > 0" class="d-flex justify-space-between">
+    <div v-bind:key="stack.index" v-for="technology in stack">
       <app-technology v-bind:technology="technology"></app-technology>
     </div>
   </v-card-actions>

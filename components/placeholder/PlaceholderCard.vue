@@ -11,7 +11,7 @@
         </p>
       </div>
     </v-card-title>
-    <app-stack v-bind:stack="cardTechnologyStack"></app-stack>
+    <app-stack v-bind:stack="cardTechnologyStack" class="pb-8 px-8"></app-stack>
   </v-card>
 </template>
 

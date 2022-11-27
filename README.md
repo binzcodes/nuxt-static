@@ -8,6 +8,7 @@ Check out the demo [here](https://nuxt-static.demo.rbi.nz)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/binzcodes/nuxt-static)
 
 ## Build Setup
 
@@ -34,3 +35,5 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 # Contributing
 
 Contributions welcome, see [CONTRIBUTING.md](CONTRIBUTING.md)
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/binzcodes/nuxt-static)

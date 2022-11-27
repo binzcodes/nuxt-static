@@ -8,7 +8,8 @@ updates:
     ignore:
       # * ignore all major updates relating to Nuxt v3 support
       - dependency-name: "nuxt"
-        update-types: ["version-update:semver-major"]
+#         update-types: ["version-update:semver-major"]
+        versions: ["3.x"]
       - dependency-name: "@vue/test-utils"
         update-types: ["version-update:semver-major"]
   # Fetch and update latest `github-actions` pkgs
